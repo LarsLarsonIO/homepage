@@ -17,11 +17,11 @@
   .background-settings-body-index{
     background-color: black;
   }
-  .button {
-  display: inline-block;
+  .btn-group.button {
+  display: block;
   border-radius: 4px;
   background-color: #064ab1;
-  border: none;
+  border: 1px solid #064ab1;
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
@@ -31,6 +31,12 @@
   cursor: pointer;
   margin: 5px;
 }
+  .button-group.button:not(:last-child){
+    border-bottom: none;
+  }
+  .btn-group.button:hover{
+    background-color: #064ab1;
+  }
 
 .button span {
   cursor: pointer;
@@ -63,16 +69,19 @@
   <div>
     <h1>Homepage</h1>
 
-    <button onclick="location.href='https://larslarsonio.github.io/homepage/index_cv.html'" class="button" style="left: auto;">
+  <div class="btn-group">
+    <button onclick="location.href='https://larslarsonio.github.io/homepage/index_cv.html'" class="button">
       <span>
         Enter CV
       </span>
     </button>
-    <button onclick="location.href='https://research-data-website.github.io/webpage-1/main.html'" class="button" style="left: auto;">
+    <button onclick="location.href='https://research-data-website.github.io/webpage-1/main.html'" class="button">
       <span>
         Projekt Übersicht
       </span>
     </button>
+  </div>
+    
   </div>
  
 </div>
