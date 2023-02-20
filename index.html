@@ -8,13 +8,9 @@
 </head>
 
 <style>
-  .background-settings-body-index{
-    background-color: black;
-  }
-  .btn-group.custom-button {
-  background-color: #1d5697; /* Green */
-  border: 1px solid #1d5697;
-  border-radius: 5px;
+  .btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -23,22 +19,24 @@
   cursor: pointer;
   width: 150px;
   display: block;
-  }  
-  .btn-group.custom-button:hover{
-    background-color: #064ab1;
-  }
-  .btn-group.custom-button:not(:last-child){
-    border-bottom: none;
-  }
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
 </style> 
 
 <body class="background-settings-body-index">
   <h1 style="text-align: center; color: antiquewhite;">Homepage</h1>
   <div class="btn-group">
-    <button onclick="location.href='https://larslarsonio.github.io/homepage/index_cv.html'" class="custom-button">
+    <button onclick="location.href='https://larslarsonio.github.io/homepage/index_cv.html'" class="button">
       Enter CV
       </button>
-    <button onclick="location.href='https://research-data-website.github.io/webpage-1/main.html'" class="custom-button">
+    <button onclick="location.href='https://research-data-website.github.io/webpage-1/main.html'" class="button">
       Projekt Übersicht
     </button>
   </div>
